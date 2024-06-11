@@ -22,6 +22,7 @@ export default {
 			'soft-orange': '#FFE9D5',
 			'soft-blue' :'#E7F5FF',
 			'just-white': '#FFF',
+			'off-white':'#FAF8F7',
 			'background-dark': '#191D1D',
 			'background-light': '#F3FFFF',
 		  }),
