@@ -3,7 +3,7 @@ import SearchIcon from "@/assets/icons/search.astro";
 import MoonIcon from "@/assets/icons/moon.astro";
 import LogoBatatabit from "@/assets/icons/logo.astro";
 import MenuIcon from "@/assets/icons/manu.astro";
-
+import BitcoinIcon from "@/assets/icons/bitcoin.astro";
 const pageTitle = "Batatbit";
 ---
 
@@ -15,7 +15,7 @@ const pageTitle = "Batatbit";
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
+  <body class=" bg-off-white">
     <header>
       <nav
         class="text-just-white font-semibold bg-gradient-to-r from-black from-25% to-yellow-500 via-orange-500 w-full h-16 lg:flex lg:justify-between flex justify-between items-center lg:items-center p-8 border-b-2 fixed z-10"
@@ -68,7 +68,68 @@ const pageTitle = "Batatbit";
           <MenuIcon />
         </ul>
       </nav>
-    </header>
+    </header><!--End Header -->
+    <main class="w-full pt-20 px-4">
+      <section
+        class="w-full h-auto flex flex-col min-w-72 justify-center items-center mt-8"
+      >
+        <BitcoinIcon />
+        <article class="mt-8 text-center text-gray">
+          <h1 class="text-3xl font-bold mb-4">
+            La próxima revolución en el intercambio de criptomonedas
+          </h1>
+          <p class="text-sm font-semibold">
+            Batatabit te ayuda a navegar entre los diferentes precios y
+            tendencias.
+          </p>
+        </article><!--End Hero -->
+      </section>
+      <section class=" w-full h-auto">
+        <article class="mt-8 text-center text-gray">
+          <h2 class="text-2xl font-bold mb-4">
+            Visibilizamos todas las tasas de cambio.
+          </h2>
+          <p class="text-sm font-semibold">
+            Traemos información en tiempo real de las tasas de cambio y las
+            monedas más importantes del mundo
+          </p>
+        </article>
+        <div class="lg:flex justify-center mb-8 lg:gap-20 ">
+          <div class=" w-50% flex flex-col justify-center items-center m-5">
+            <h3 class="text-primary font-bold text-xl mb-4">Monedas</h3>
+            <div class="w-full grid grid-rows-4 grid-flow-col gap-1">
+              <div class="p-2 rounded-lg bg-white text-center font-medium">Bitcoin</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">Ethereum</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">Ripple</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">Stellar</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$20.43</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$2.15</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$13.15</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$4.96</div>
+            </div>
+            <div class="pt-4">
+              <p class="p-2 bg-soft-orange rounded-lg"><b class=" font-semibold">Actualizado: </b>08 de enero 21:09</p>
+            </div>
+          </div>
+          <div class=" w-50% flex flex-col justify-center items-center m-5">
+            <h3 class="text-secondary font-bold text-xl mb-4">Comisiones</h3>
+            <div class="w-full grid grid-rows-4 grid-flow-col gap-1">
+              <div class="p-2 rounded-lg bg-white text-center font-medium">Bitrade</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">Bitpreco</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">Novadax</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">Coinext</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$12.96</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$13.07</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$13.15</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$14.96</div>
+            </div>
+            <div class="pt-4">
+              <p class="p-2 bg-soft-blue rounded-lg"><b class=" font-semibold">Actualizado: </b>08 de enero 21:09</p>
+            </div>
+          </div>
+        </div>
+        
+      </section><!--End Mercados -->
+    </main>
   </body>
 </html>
-
