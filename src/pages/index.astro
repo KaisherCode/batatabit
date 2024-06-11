@@ -9,7 +9,10 @@ import ClockIcon from "@/assets/icons/clock.astro";
 import EyeIcon from "@/assets/icons/eye.astro";
 import DollarIcon from "@/assets/icons/dollar.astro";
 import CheckIcon from "@/assets/icons/check.astro";
+import { Image } from "astro:assets";
+import Bitcoinbaby from "@/assets/img/bitcoinbaby.jpg"
 const pageTitle = "Batatbit";
+
 ---
 
 <html lang="en">
@@ -141,7 +144,7 @@ const pageTitle = "Batatbit";
           <h2 class=" font-bold text-2xl pt-14">Creamos un producto sin comparación</h2>
           <p class="pt-4 font-semibold">Confiable y diseñado para su uso diario.</p>
         </div>
-        <section class=" lg:grid grid-rows-2 grid-flow-col lg:gap-16 lg:px-16 justify-center">
+        <section class=" lg:grid grid-rows-2 grid-flow-col lg:gap-16 lg:px-16 justify-center pb-4">
           <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
             <span><ClockIcon/></span>
             <h3 class=" font-bold text-xl pt-3">Tiempo real</h3>
@@ -164,6 +167,9 @@ const pageTitle = "Batatbit";
           </article>
         </section>
       </section>
+      <section class=" bitcoin-img-conatiner">
+        <h2 class=" text-center text-just-white text-3xl font-bold pt-16">Descubralo hoy</h2>
+      </section>
     </main>
   </body>
 </html>
@@ -178,4 +184,13 @@ const pageTitle = "Batatbit";
     linear-gradient(black, #222) padding-box,
     linear-gradient(#fd8f0b,#1A9AF7) border-box;
   }
+  .bitcoin-img-conatiner{
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url('../assets/img/bitcoinbaby.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 </style>
