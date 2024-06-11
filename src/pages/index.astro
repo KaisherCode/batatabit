@@ -4,6 +4,11 @@ import MoonIcon from "@/assets/icons/moon.astro";
 import LogoBatatabit from "@/assets/icons/logo.astro";
 import MenuIcon from "@/assets/icons/manu.astro";
 import BitcoinIcon from "@/assets/icons/bitcoin.astro";
+import BatataIcon from "@/assets/icons/batata.astro";
+import ClockIcon from "@/assets/icons/clock.astro";
+import EyeIcon from "@/assets/icons/eye.astro";
+import DollarIcon from "@/assets/icons/dollar.astro";
+import CheckIcon from "@/assets/icons/check.astro";
 const pageTitle = "Batatbit";
 ---
 
@@ -130,6 +135,47 @@ const pageTitle = "Batatbit";
         </div>
         
       </section><!--End Mercados -->
+      <section class=" bg-background-dark w-full h-auto text-just-white relative">
+        <span class="absolute -top-3 left-[calc(50%-40px/2)]"><BatataIcon/></span>
+        <div class="text-center pb-5">
+          <h2 class=" font-bold text-2xl pt-14">Creamos un producto sin comparación</h2>
+          <p class="pt-4 font-semibold">Confiable y diseñado para su uso diario.</p>
+        </div>
+        <section class=" lg:grid grid-rows-2 grid-flow-col lg:gap-16 lg:px-16 justify-center">
+          <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
+            <span><ClockIcon/></span>
+            <h3 class=" font-bold text-xl pt-3">Tiempo real</h3>
+            <p class=" lg:font-medium">Nuestra API toma información minuto aminuto sobre las tasas que más determinan el comportamiento.</p>
+          </article>
+          <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
+            <span><DollarIcon/></span>
+            <h3 class=" font-bold text-xl pt-3">Compra monedas</h3>
+            <p class=" lg:font-medium">No más rumores, con Batatabit sabrás el valor real de cada moneda en el mercado actual.</p>
+          </article>
+          <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
+            <span><EyeIcon/></span>
+            <h3 class=" font-bold text-xl pt-3">No hay tasas escondidas</h3>
+            <p class=" lg:font-medium">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estas adquiriendo.</p>
+          </article>
+          <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
+            <span><CheckIcon/></span>
+            <h3 class=" font-bold text-xl pt-3">Información confiable</h3>
+            <p class=" lg:font-medium">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+          </article>
+        </section>
+      </section>
     </main>
   </body>
 </html>
+
+<style>
+  .card:hover,
+  .card:focus{
+    padding: 16px;
+    border-radius: 5px;
+    border: 2px solid #0000;
+    background: 
+    linear-gradient(black, #222) padding-box,
+    linear-gradient(#fd8f0b,#1A9AF7) border-box;
+  }
+</style>
