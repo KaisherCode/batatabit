@@ -9,10 +9,9 @@ import ClockIcon from "@/assets/icons/clock.astro";
 import EyeIcon from "@/assets/icons/eye.astro";
 import DollarIcon from "@/assets/icons/dollar.astro";
 import CheckIcon from "@/assets/icons/check.astro";
-import { Image } from "astro:assets";
-import Bitcoinbaby from "@/assets/img/bitcoinbaby.jpg"
+import RightArrowIcon from "@/assets/icons/right-arrow.astro";
+import RightArrow from "@/assets/icons/right-arrow.astro";
 const pageTitle = "Batatbit";
-
 ---
 
 <html lang="en">
@@ -23,7 +22,7 @@ const pageTitle = "Batatbit";
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body class=" bg-off-white">
+  <body class="bg-off-white">
     <header>
       <nav
         class="text-just-white font-semibold bg-gradient-to-r from-black from-25% to-yellow-500 via-orange-500 w-full h-16 lg:flex lg:justify-between flex justify-between items-center lg:items-center p-8 border-b-2 fixed z-10"
@@ -92,7 +91,7 @@ const pageTitle = "Batatbit";
           </p>
         </article><!--End Hero -->
       </section>
-      <section class=" w-full h-auto">
+      <section class="w-full h-auto">
         <article class="mt-8 text-center text-gray px-4">
           <h2 class="text-2xl font-bold mb-4">
             Visibilizamos todas las tasas de cambio.
@@ -102,73 +101,183 @@ const pageTitle = "Batatbit";
             monedas más importantes del mundo
           </p>
         </article>
-        <div class="lg:flex justify-center mb-8 lg:gap-20 ">
-          <div class=" w-50% flex flex-col justify-center items-center m-5">
+        <div class="lg:flex justify-center mb-8 lg:gap-20">
+          <div class="w-50% flex flex-col justify-center items-center m-5">
             <h3 class="text-primary font-bold text-xl mb-4">Monedas</h3>
             <div class="w-full grid grid-rows-4 grid-flow-col gap-1">
-              <div class="p-2 rounded-lg bg-white text-center font-medium">Bitcoin</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium">Ethereum</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium">Ripple</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium">Stellar</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$20.43</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$2.15</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$13.15</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$4.96</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">
+                Bitcoin
+              </div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">
+                Ethereum
+              </div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">
+                Ripple
+              </div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">
+                Stellar
+              </div>
+              <div
+                class="p-2 rounded-lg bg-white text-center font-medium text-gray"
+              >
+                $20.43
+              </div>
+              <div
+                class="p-2 rounded-lg bg-white text-center font-medium text-gray"
+              >
+                $2.15
+              </div>
+              <div
+                class="p-2 rounded-lg bg-white text-center font-medium text-gray"
+              >
+                $13.15
+              </div>
+              <div
+                class="p-2 rounded-lg bg-white text-center font-medium text-gray"
+              >
+                $4.96
+              </div>
             </div>
             <div class="pt-4">
-              <p class="p-2 bg-soft-orange rounded-lg"><b class=" font-semibold">Actualizado: </b>08 de enero 21:09</p>
+              <p class="p-2 bg-soft-orange rounded-lg">
+                <b class="font-semibold">Actualizado: </b>08 de enero 21:09
+              </p>
             </div>
           </div>
-          <div class=" w-50% flex flex-col justify-center items-center m-5">
+          <div class="w-50% flex flex-col justify-center items-center m-5">
             <h3 class="text-secondary font-bold text-xl mb-4">Comisiones</h3>
             <div class="w-full grid grid-rows-4 grid-flow-col gap-1">
-              <div class="p-2 rounded-lg bg-white text-center font-medium">Bitrade</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium">Bitpreco</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium">Novadax</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium">Coinext</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$12.96</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$13.07</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$13.15</div>
-              <div class="p-2 rounded-lg bg-white text-center font-medium text-gray">$14.96</div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">
+                Bitrade
+              </div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">
+                Bitpreco
+              </div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">
+                Novadax
+              </div>
+              <div class="p-2 rounded-lg bg-white text-center font-medium">
+                Coinext
+              </div>
+              <div
+                class="p-2 rounded-lg bg-white text-center font-medium text-gray"
+              >
+                $12.96
+              </div>
+              <div
+                class="p-2 rounded-lg bg-white text-center font-medium text-gray"
+              >
+                $13.07
+              </div>
+              <div
+                class="p-2 rounded-lg bg-white text-center font-medium text-gray"
+              >
+                $13.15
+              </div>
+              <div
+                class="p-2 rounded-lg bg-white text-center font-medium text-gray"
+              >
+                $14.96
+              </div>
             </div>
             <div class="pt-4">
-              <p class="p-2 bg-soft-blue rounded-lg"><b class=" font-semibold">Actualizado: </b>08 de enero 21:09</p>
+              <p class="p-2 bg-soft-blue rounded-lg">
+                <b class="font-semibold">Actualizado: </b>08 de enero 21:09
+              </p>
             </div>
           </div>
         </div>
-        
       </section><!--End Mercados -->
-      <section class=" bg-background-dark w-full h-auto text-just-white relative">
-        <span class="absolute -top-3 left-[calc(50%-40px/2)]"><BatataIcon/></span>
+      <section
+        class="bg-background-dark w-full h-auto text-just-white relative"
+      >
+        <span class="absolute -top-3 left-[calc(50%-40px/2)]"
+          ><BatataIcon /></span
+        >
         <div class="text-center pb-5">
-          <h2 class=" font-bold text-2xl pt-14">Creamos un producto sin comparación</h2>
-          <p class="pt-4 font-semibold">Confiable y diseñado para su uso diario.</p>
+          <h2 class="font-bold text-2xl pt-14">
+            Creamos un producto sin comparación
+          </h2>
+          <p class="pt-4 font-semibold">
+            Confiable y diseñado para su uso diario.
+          </p>
         </div>
-        <section class=" lg:grid grid-rows-2 grid-flow-col lg:gap-16 lg:px-16 justify-center pb-4">
+        <section
+          class="lg:grid grid-rows-2 grid-flow-col lg:gap-16 lg:px-16 justify-center pb-4"
+        >
           <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
-            <span><ClockIcon/></span>
-            <h3 class=" font-bold text-xl pt-3">Tiempo real</h3>
-            <p class=" lg:font-medium">Nuestra API toma información minuto aminuto sobre las tasas que más determinan el comportamiento.</p>
+            <span><ClockIcon /></span>
+            <h3 class="font-bold text-xl pt-3">Tiempo real</h3>
+            <p class="lg:font-medium">
+              Nuestra API toma información minuto aminuto sobre las tasas que
+              más determinan el comportamiento.
+            </p>
           </article>
           <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
-            <span><DollarIcon/></span>
-            <h3 class=" font-bold text-xl pt-3">Compra monedas</h3>
-            <p class=" lg:font-medium">No más rumores, con Batatabit sabrás el valor real de cada moneda en el mercado actual.</p>
+            <span><DollarIcon /></span>
+            <h3 class="font-bold text-xl pt-3">Compra monedas</h3>
+            <p class="lg:font-medium">
+              No más rumores, con Batatabit sabrás el valor real de cada moneda
+              en el mercado actual.
+            </p>
           </article>
           <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
-            <span><EyeIcon/></span>
-            <h3 class=" font-bold text-xl pt-3">No hay tasas escondidas</h3>
-            <p class=" lg:font-medium">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estas adquiriendo.</p>
+            <span><EyeIcon /></span>
+            <h3 class="font-bold text-xl pt-3">No hay tasas escondidas</h3>
+            <p class="lg:font-medium">
+              Ni en la compra o al momento de exit, Batabit siempre te muestra
+              el costo real de lo que estas adquiriendo.
+            </p>
           </article>
           <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
-            <span><CheckIcon/></span>
-            <h3 class=" font-bold text-xl pt-3">Información confiable</h3>
-            <p class=" lg:font-medium">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
+            <span><CheckIcon /></span>
+            <h3 class="font-bold text-xl pt-3">Información confiable</h3>
+            <p class="lg:font-medium">
+              Nuestras fuentes están 100% verificadas y continuamos auditando su
+              contenido mientras se actualizan.
+            </p>
           </article>
         </section>
       </section>
-      <section class=" bitcoin-img-conatiner">
-        <h2 class=" text-center text-just-white text-3xl font-bold pt-16">Descubralo hoy</h2>
+      <section class="bitcoin-img-conatiner">
+        <h2 class="text-center text-just-white text-3xl font-bold pt-16">
+          Descubralo hoy
+        </h2>
+      </section>
+      <section class="w-full min-w-80 pb-10">
+        <div class="text-center pb-14">
+          <h2 class="text-2xl pt-14">Escoge el plan que mejor se ajuste a ti.</h2>
+          <p class=" pt-8">Cualquier plan te da acceso completo a nuestra plataforma</p>
+        </div>
+        <section class="flex lg:justify-center h-80 overflow-x-auto snap-proximity lg:overflow-x-hidden lg:space-x-8 space-x-4 px-4 overscroll-x-contain pb-5">
+          <article class=" min-w-48 max-w-72 relative rounded-xl bg-just-white mt-14 shadow-md hover:-translate-y-4 transition-all ">
+            <span class="basic text-just-white absolute p-2 w-32 bg-slate-400 rounded-lg text-center -top-4 left-[calc(50%-60px)]">Básico</span>
+            <div class=" text-center p-2">
+              <h3 class=" pt-8 font-medium">Pago Mensual</h3>
+              <p class=" text-6xl font-bold"><sup class=" text-lg align-super">$</sup>30</p>
+              <p class=" text-sm text-gray">Prueba nuestra plataforma. Cancela cuando quieras.</p>
+              <button class=" rounded w-36 h-11 bg-soft-blue mt-5 border-2 border-orange-500"><a href="#" class="flex justify-center items-center">Escoge este<RightArrow/></a></button>
+            </div>
+          </article>
+          <article class="min-w-48 max-w-72 relative rounded-xl bg-just-white mt-14 shadow-md hover:-translate-y-4 transition-all">
+            <span class="premium text-just-white absolute p-2 w-32 bg-slate-400 rounded-lg text-center -top-4 left-[calc(50%-60px)]">Premium</span>
+            <div class="text-center">
+              <h3 class="pt-8 font-medium">Pago Mensual</h3>
+              <p class="text-6xl font-bold"><sup class="text-lg align-super">$</sup>99</p>
+              <p class="text-sm text-gray">Prueba nuestra plataforma. Cancela cuando quieras.</p>
+              <button class="rounded w-36 h-11 bg-soft-blue mt-5 border-2 border-orange-500"><a href="#" class="flex justify-center items-center">Escoge este <RightArrow/></span></a></button>
+            </div>
+          </article>
+          <article class="min-w-48 max-w-72 relative rounded-xl bg-just-white mt-14 shadow-md hover:-translate-y-4 transition-all">
+            <span class="expert text-just-white absolute p-2 w-32 bg-slate-400 rounded-lg text-center -top-4 left-[calc(50%-60px)]">Expert+</span>
+            <div class="text-center">
+              <h3 class="pt-8 font-medium">Pago Mensual</h3>
+              <p class="text-6xl font-bold"><sup class="text-lg align-super">$</sup>150</p>
+              <p class="text-sm text-gray">Prueba nuestra plataforma. Cancela cuando quieras.</p>
+              <button class="rounded w-36 h-11 bg-soft-blue mt-5 border-2 border-orange-500"><a href="#" class="flex justify-center items-center">Escoge este<RightArrow/></a></button>
+            </div>
+          </article>
+        </section>
       </section>
     </main>
   </body>
@@ -176,21 +285,30 @@ const pageTitle = "Batatbit";
 
 <style>
   .card:hover,
-  .card:focus{
+  .card:focus {
     padding: 16px;
     border-radius: 5px;
     border: 2px solid #0000;
-    background: 
-    linear-gradient(black, #222) padding-box,
-    linear-gradient(#fd8f0b,#1A9AF7) border-box;
+    background:
+      linear-gradient(black, #222) padding-box,
+      linear-gradient(#fd8f0b, #1a9af7) border-box;
   }
-  .bitcoin-img-conatiner{
+  .bitcoin-img-conatiner {
     width: 100%;
     min-width: 320px;
     height: 60vh;
-    background-image: url('../assets/img/bitcoinbaby.jpg');
+    background-image: url("../assets/img/bitcoinbaby.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .basic{
+    background: linear-gradient(300deg, #fd8f0b 16%, red 100%);
+  }
+  .premium{
+    background: linear-gradient(300deg, green 16%, #fd8f0b 100%);
+  }
+  .expert {
+    background: linear-gradient(300deg, #1a9af7 16%, #fd8f0b 100%);
 }
 </style>
