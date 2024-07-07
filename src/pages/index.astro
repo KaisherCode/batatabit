@@ -3,15 +3,17 @@ import Layout from "@/layouts/Layout.astro"
 import Hero from "@/components/Hero.astro"
 import SectionContainer from "@/components/SectionContainer.astro"
 import Markets from "@/components/Markets.astro"
+import Services from "@/components/Services.astro"
 ---
 
 <Layout title="Batatabit" description="Sitio web de intercambio de criptomonedas">
-<main class="px-4"> 
+<main> 
   <SectionContainer class="py-16 md:py-36">
     <Hero/>
   </SectionContainer>
-  <SectionContainer>
+  <SectionContainer id="markets">
     <Markets/>
   </SectionContainer>
+    <Services/>
 </main>
 </Layout>
