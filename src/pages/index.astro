@@ -5,6 +5,7 @@ import SectionContainer from "@/components/SectionContainer.astro"
 import Markets from "@/components/Markets.astro"
 import Services from "@/components/Services.astro"
 import Banner from "@/components/Banner.astro"
+import Plans from "@/components/Plans.astro"
 ---
 
 <Layout title="Batatabit" description="Sitio web de intercambio de criptomonedas">
@@ -15,7 +16,10 @@ import Banner from "@/components/Banner.astro"
   <SectionContainer id="markets">
     <Markets/>
   </SectionContainer>
-  <Services/>
+  <Services id="services"/>
   <Banner/>
+  <SectionContainer id="plans">
+    <Plans/>
+  </SectionContainer>
 </main>
 </Layout>
