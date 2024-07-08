@@ -3,56 +3,55 @@ import BatataIcon from "@/assets/icons/batata.astro";
 
 const SERVICES = [
   {
-    name:"clock",
-    title:"Tiempo real",
-    description:"Nuestra API toma información minuto aminuto sobre las tasas que más determinan el comportamiento.",
-    icon:"/services/clock.svg",
+    name: "clock",
+    title: "Tiempo real",
+    description:
+      "Nuestra API toma información minuto aminuto sobre las tasas que más determinan el comportamiento.",
+    icon: "/services/clock.svg",
   },
   {
-    name:"dollar",
-    title:"Compra monedas",
-    description:"No más rumores, con Batatabit sabrás el valor real de cada moneda en el mercado actual.",
-    icon:"/services/dollar.svg",
+    name: "dollar",
+    title: "Compra monedas",
+    description:
+      "No más rumores, con Batatabit sabrás el valor real de cada moneda en el mercado actual.",
+    icon: "/services/dollar.svg",
   },
   {
-    name:"eye",
-    title:"No hay tasas escondidas",
-    description:"Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estas adquiriendo.",
-    icon:"/services/eye.svg",
+    name: "eye",
+    title: "No hay tasas escondidas",
+    description:
+      "Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estas adquiriendo.",
+    icon: "/services/eye.svg",
   },
   {
-    name:"check",
-    title:"Información confiable",
-    description:"Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.",
-    icon:"/services/check.svg",
+    name: "check",
+    title: "Información confiable",
+    description:
+      "Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.",
+    icon: "/services/check.svg",
   },
-]
+];
 ---
-<section
-        class="bg-background-dark w-full h-auto text-just-white relative"
-      >
-        <span class="absolute -top-3 left-[calc(50%-40px/2)]"
-          ><BatataIcon /></span
-        >
-        <div class="text-center pb-5">
-          <h2 class="font-bold text-2xl pt-14">
-            Creamos un producto sin comparación
-          </h2>
-          <p class="pt-4 font-semibold">
-            Confiable y diseñado para su uso diario.
-          </p>
-        </div>
-        <section
-          class="lg:grid grid-rows-2 md:grid-flow-col justify-center md:justify-center pb-4"
-        >
-        { SERVICES.map(({name,title, description,icon})=>(
-          <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
-            <img src={icon} alt={name}>
-            <h3 class="font-bold text-xl pt-3">{title}</h3>
-            <p class="lg:font-medium">
-              {description}
-            </p>
-           </article>
-        ))
-        }
-        </section>
+
+<section class="bg-background-dark w-full h-auto text-just-white relative">
+  <span class="absolute -top-3 left-[calc(50%-40px/2)]"><BatataIcon /></span>
+  <div class="text-center pb-5">
+    <h2 class="font-bold text-2xl pt-14">
+      Creamos un producto sin comparación
+    </h2>
+    <p class="pt-4 font-semibold">Confiable y diseñado para su uso diario.</p>
+  </div>
+  <section
+    class="lg:grid grid-rows-2 md:grid-flow-col justify-center md:justify-center pb-4"
+  >
+    {
+      SERVICES.map(({ name, title, description, icon }) => (
+        <article class="card bg-black p-4 m-4 rounded-md min-w-72 max-w-96">
+          <img src={icon} alt={name} />
+          <h3 class="font-bold text-xl pt-3">{title}</h3>
+          <p class="lg:font-medium">{description}</p>
+        </article>
+      ))
+    }
+  </section>
+</section>
