@@ -3,57 +3,76 @@ import SearchIcon from "@/assets/icons/search.astro";
 import MoonIcon from "@/assets/icons/moon.astro";
 import LogoBatatabit from "@/assets/icons/logo.astro";
 import MenuIcon from "@/assets/icons/manu.astro";
+
+const navItems = [
+  {
+    title: "Inicio",
+    label: "inicio",
+    url: "/#home",
+  },
+  {
+    title: "Mercados",
+    label: "mercados",
+    url: "/#markets",
+  },
+  {
+    title: "Planes",
+    label: "planes",
+    url: "/#plans",
+  },
+  {
+    title: "Contacto",
+    label: "contacto",
+    url: "mailto:kaisher@hynkor.com",
+  },
+];
 ---
+
 <header>
-    <nav
-      class="text-just-white font-semibold bg-gradient-to-r from-black from-25% to-yellow-500 via-orange-500 w-full h-16 lg:flex lg:justify-between flex justify-between items-center lg:items-center p-8 border-b-2 fixed z-10"
+  <nav
+    class="text-just-white font-semibold bg-gradient-to-r from-black from-25% to-yellow-500 via-orange-500 w-full h-16 lg:flex lg:justify-between flex justify-between items-center lg:items-center p-8 border-b-2 fixed z-10"
+  >
+    <LogoBatatabit />
+
+    <ul aria-hidden="true" class="hidden lg:flex">
+      <li class="space-x-4">
+        {
+          navItems.map((link) => (
+            <a aria-label={link.label} href={link.url} class="hover:text-yellow-400 hover:text-primary">
+              {link.title}
+            </a>
+          ))
+        }
+      </li>
+    </ul>
+    <div
+      aria-hidden="true"
+      class="hidden lg:flex justify-between items-center space-x-2"
     >
-      <LogoBatatabit />
-      <ul aria-hidden="true" class="hidden lg:flex space-x-4">
-        <li class="hover:text-yellow-400 hover:text-primary">
-          <a href="">Inicio</a>
-        </li>
-        <li class="hover:text-yellow-400 hover:text-primary">
-          <a href="">Nosotros</a>
-        </li>
-        <li class="hover:text-yellow-400 hover:text-primary">
-          <a href="">Mercados</a>
-        </li>
-        <li class="hover:text-yellow-400 hover:text-primary">
-          <a href="">Planes</a>
-        </li>
-        <li class="hover:text-yellow-400 hover:text-primary">
-          <a href="">Blog</a>
-        </li>
+      <input
+        class="text-gray p-2 rounded-lg shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-56"
+        type="search"
+        placeholder="Buscar..."
+      />
+      <SearchIcon />
+      <ul class="justify-center items-center">
+        <a
+          href=""
+          type="button"
+          class="px-4 p-2 w-32 bg-background-dark rounded-lg text-white"
+          >Iniciar Sesión</a
+        >
+        <a
+          href="#"
+          type="button"
+          class="px-4 p-2 w-32 bg-soft-blue rounded-lg text-warm-black"
+          >Registrate</a
+        >
       </ul>
-      <div
-        aria-hidden="true"
-        class="hidden lg:flex justify-between items-center space-x-2"
-      >
-        <input
-          class="text-gray p-2 rounded-lg shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-56"
-          type="search"
-          placeholder="Buscar..."
-        />
-        <SearchIcon />
-        <ul class="justify-center items-center">
-          <a
-            href=""
-            type="button"
-            class="px-4 p-2 w-32 bg-background-dark rounded-lg text-white"
-            >Iniciar Sesión</a
-          >
-          <a
-            href=""
-            type="button"
-            class="px-4 p-2 w-32 bg-soft-blue rounded-lg text-warm-black"
-            >Registrate</a
-          >
-        </ul>
-        <MoonIcon />
-      </div>
-      <ul class="lg:hidden">
-        <MenuIcon />
-      </ul>
-    </nav>
-  </header><!--End Header -->
+      <MoonIcon />
+    </div>
+    <ul class="lg:hidden">
+      <MenuIcon />
+    </ul>
+  </nav>
+</header>
